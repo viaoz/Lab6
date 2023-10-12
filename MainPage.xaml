@@ -9,7 +9,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddAirport_Clicked"/>
         <ToolbarItem Text="Edit" Clicked="EditAirport_Clicked"/>
-                <ToolbarItem Text="Stats" Clicked="CalculateStatistics_Clicked"/>
+        <ToolbarItem Text="Stats" Clicked="CalculateStatistics_Clicked"/>
 
     </ContentPage.ToolbarItems>
     <ScrollView>
