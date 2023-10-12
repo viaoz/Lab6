@@ -6,14 +6,18 @@
              x:Class="Lab2_Solution.MainPage"
              Title="Airports">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddAirport_Clicked"/>
+        <ToolbarItem Text="Edit" Clicked="EditAirport_Clicked"/>
+                <ToolbarItem Text="Stats" Clicked="CalculateStatistics_Clicked"/>
+
+    </ContentPage.ToolbarItems>
     <ScrollView>
        <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Start">
-
-            <Label HorizontalTextAlignment="Start" Text="Airports" FontSize="Large"/>
 
             <!-- This line says that the ItemsSource of the CollectionView is the Airports property of the Domain object (an ObservableCollection) -->
             <CollectionView x:Name="CV" ItemsSource="{Binding Airports}" SelectionMode="Single">
@@ -37,9 +41,7 @@
                 <Entry Grid.Column="2" Text="03/03/2023" Placeholder="Date Visited" x:Name="DateVisitedENT"/>
                 <Entry Grid.Column="3" Text="3" Placeholder="Rating" x:Name="RatingENT"/>
             </Grid>
-            <Button TextColor="White" Text="Add Airport" Clicked="AddAirport_Clicked"/>
-            <Button TextColor="White" Text="Edit Airport" Clicked="EditAirport_Clicked"/>
-            <Button TextColor="White" Text="Calculate Statistics" Clicked="CalculateStatistics_Clicked"/>
+
 
         </VerticalStackLayout>
     </ScrollView>
