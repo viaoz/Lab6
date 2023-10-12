@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:Lab2_Solution.Model"
              x:DataType="model:BusinessLogic" 
-             x:Class="Lab2_Solution.MainPage">
+             x:Class="Lab2_Solution.MainPage"
+             Title="Airports">
 
     <ScrollView>
        <ScrollView>
