@@ -4,7 +4,7 @@
              xmlns:model="clr-namespace:Lab6_Starter.Model"
              x:DataType="model:BusinessLogic" 
              x:Class="Lab6_Starter.MainPage"
-             Title="Airports">
+             Title="Routing_Strategies">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddAirport_Clicked"/>
