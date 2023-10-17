@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Lab2_Solution.Model
+namespace Lab6_Starter.Model
 {
     public interface IDatabase
     {

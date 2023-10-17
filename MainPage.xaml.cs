@@ -1,5 +1,5 @@
-﻿using Lab2_Solution.Model;
-namespace Lab2_Solution;
+﻿using Lab6_Starter.Model;
+namespace Lab6_Starter;
 
 public partial class MainPage : ContentPage
 {

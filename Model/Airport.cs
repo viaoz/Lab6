@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Lab2_Solution.Model;
+namespace Lab6_Starter.Model;
 
 [Serializable()]
 public class Airport : INotifyPropertyChanged

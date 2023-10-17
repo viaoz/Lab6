@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Lab2_Solution;
+using Lab6_Starter;
 
-namespace Lab2_Solution.Model;
+namespace Lab6_Starter.Model;
 
 
 public class BusinessLogic : IBusinessLogic

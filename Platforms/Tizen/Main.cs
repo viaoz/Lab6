@@ -2,7 +2,7 @@
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace Lab2_Solution;
+namespace Lab6_Starter;
 
 class Program : MauiApplication
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Lab2_Solution.Model;
+using Lab6_Starter.Model;
 
-namespace Lab2_Solution;
+namespace Lab6_Starter;
 
 public static class MauiProgram
 {

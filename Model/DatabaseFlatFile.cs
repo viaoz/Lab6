@@ -9,7 +9,7 @@ using System.Collections.ObjectModel;
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
 
 
-namespace Lab2_Solution.Model;
+namespace Lab6_Starter.Model;
 
 public class DatabaseFlatFile : IDatabase
 {

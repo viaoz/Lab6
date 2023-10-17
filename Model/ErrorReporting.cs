@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Lab2_Solution.Model;
+namespace Lab6_Starter.Model;
 
 public enum AirportAdditionError
 {

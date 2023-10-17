@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Lab2_Solution;
+namespace Lab6_Starter;
 
 [Application]
 public class MainApplication : MauiApplication

@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Lab2_Solution;
+namespace Lab6_Starter;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

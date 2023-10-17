@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Npgsql; // To install this, add dotnet add package Npgsql 
 
 
-namespace Lab2_Solution.Model;
+namespace Lab6_Starter.Model;
 
 public class Database : IDatabase
 {
