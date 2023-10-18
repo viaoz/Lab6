@@ -1,10 +1,9 @@
-﻿namespace MauiApp1;
+﻿namespace Lab6_Starter;
 
-public partial class MainPage : ContentPage
+public partial class RoutingStrategies : ContentPage
 {
-    int count = 0;
 
-    public MainPage()
+    public RoutingStrategies()
     {
         InitializeComponent();
     }
