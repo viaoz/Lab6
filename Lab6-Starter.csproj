@@ -70,4 +70,20 @@
 	  <BundleResource Include="Resources\Images\trash.png" />
 	  <BundleResource Include="Resources\Images\rectangle_list_48.png" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="NearByAirports.xaml.cs">
+	    <DependentUpon>NearByAirports.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="PlanningTools.xaml.cs">
+	    <DependentUpon>PlanningTools.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="NearByAirports.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PlanningTools.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
 </Project>
