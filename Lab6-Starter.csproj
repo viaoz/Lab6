@@ -70,4 +70,14 @@
 	  <BundleResource Include="Resources\Images\trash.png" />
 	  <BundleResource Include="Resources\Images\rectangle_list_48.png" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Weather.xaml.cs">
+	    <DependentUpon>Weather.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Weather.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
 </Project>

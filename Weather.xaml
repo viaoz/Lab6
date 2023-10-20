@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:Lab6_Starter.Model"
+             x:DataType="model:BusinessLogic" 
+             x:Class="Lab6_Starter.Weather"
+             Title="Weather">
+
+    
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+            //WEATHER VIEW///////////////////////////////////////////
+                
+                
+                
+            //TEXT ELEMENTS//////////////////////////////////////////
+                
+
+
+            </VerticalStackLayout>
+
+</ContentPage>
+
