@@ -5,6 +5,9 @@
              x:Class="Lab6_Starter.PlanningTools"
              Title="PlanningTools">
     <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
-        <Button Text="Near by Airports" LineBreakMode="WordWrap" Grid.Row="0" Grid.Column="0" Clicked="NearByAirports_Clicked" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="Nearby Airports" LineBreakMode="WordWrap" Grid.Row="0" Grid.Column="0" Clicked="NearByAirports_Clicked" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="Routing Strategies" LineBreakMode="WordWrap" Grid.Row="0" Grid.Column="1" Clicked="NearByAirports_Clicked" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="Routing Strategies" LineBreakMode="WordWrap" Grid.Row="1" Grid.Column="0" Clicked="NearByAirports_Clicked" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="Routing Strategies" LineBreakMode="WordWrap" Grid.Row="1" Grid.Column="1" Clicked="NearByAirports_Clicked" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>
