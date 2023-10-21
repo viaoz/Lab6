@@ -12,7 +12,7 @@
             Padding="30,0"
             VerticalOptions="Start">
             <!--WEATHER VIEW-->
-        <Grid RowDefinitions="Auto, Auto, Auto, Auto">
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
             <StackLayout Grid.Row="0" Margin="20, 20, 20, 0" Orientation="Horizontal">
                 <Frame Padding="10" CornerRadius="35" HasShadow="True" BorderColor="LightBlue">
                     <Label Text="Appleton" FontSize="Default" HorizontalOptions="Start" BackgroundColor="Tan"></Label>
@@ -74,8 +74,30 @@
                 <Label Text="6 AM" FontSize="12" HorizontalOptions="Start" BackgroundColor="Tan"></Label>
             </VerticalStackLayout>
 
+            </Grid>
 
-        </Grid>
+            <Grid Grid.Row="4" RowDefinitions="Auto, Auto">
+                <Frame Margin="0,30,0,0" Grid.Row="0" Padding="10" CornerRadius="0" HasShadow="True" BorderColor="LightBlue">
+                    <Label  Text="METAR Report"/>
+                </Frame>
+
+                <Frame Grid.Row="1" Padding="10" CornerRadius="0" HasShadow="True" BorderColor="LightBlue">
+                    <Label Text="KATW 211605Z 2116/2212 07003KT P6SM -RA SCT022 OVC050 TEMPO 2116/2118 BKN004"/>
+                 </Frame>
+            </Grid>
+
+            <Grid Grid.Row="5" RowDefinitions="Auto, Auto">
+                <Frame Margin="0,10,0,0" Grid.Row="0" Padding="10" CornerRadius="0" HasShadow="True" BorderColor="LightBlue">
+                    <Label  Text="TAF Report"/>
+                </Frame>
+
+                <Frame Grid.Row="1" Padding="10" CornerRadius="0" HasShadow="True" BorderColor="LightBlue">
+                    <Label Grid.Row="1" Text="FM211800 01009KT 5SM -RA BR OVC016
+                                              FM212200 35010G18KT P6SM -SHRA BKN020
+                                              FM220100 35008KT P6SM SCT030
+                                              FM220600 34007KT P6SM SCT035="/>
+                </Frame>
+            </Grid>
         </Grid>
 
 
