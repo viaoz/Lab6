@@ -15,7 +15,7 @@
         </NavigationPage>
         <NavigationPage IconImageSource="map.png" Title="Map">
             <x:Arguments>
-                <local:PlanningTools/>
+                <local:Map/>
             </x:Arguments>
         </NavigationPage>
         <NavigationPage IconImageSource="compass_slash.png" Title="Planning Tools">
