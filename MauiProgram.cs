@@ -6,7 +6,7 @@ namespace Lab6_Starter;
 public static class MauiProgram
 {
 	
-    public static IBusinessLogic BusinessLogic = new BusinessLogic(new Database());
+    public static IBusinessLogic BusinessLogic = new BusinessLogic(new DatabaseFlatFile());
 
     public static MauiApp CreateMauiApp()
 	{

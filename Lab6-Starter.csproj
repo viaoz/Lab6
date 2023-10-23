@@ -72,24 +72,12 @@
 	  <BundleResource Include="Resources\Images\rectangle_list_48.png" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Compile Update="NearByAirports.xaml.cs">
-	    <DependentUpon>NearByAirports.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="RoutingStrategies.xaml.cs">
-	    <DependentUpon>RoutingStrategies.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="PlanningTools.xaml.cs">
 	    <DependentUpon>PlanningTools.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Map.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="NearByAirports.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="RoutingStrategies.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PlanningTools.xaml">

@@ -59,6 +59,30 @@
                     </sensors:Location>
                 </maps:Pin.Location>
             </maps:Pin>
+            <maps:Pin Label="KMSN"
+                Address="4000 International Ln, Madison, WI 53704"
+                Type="Place">
+                <maps:Pin.Location>
+                    <sensors:Location>
+                        <x:Arguments>
+                            <x:Double>43.135990</x:Double>
+                            <x:Double>-89.345802</x:Double>
+                        </x:Arguments>
+                    </sensors:Location>
+                </maps:Pin.Location>
+            </maps:Pin>
+            <maps:Pin Label="KMKE"
+                Address="5300 S Howell Ave, Milwaukee, WI 53207"
+                Type="Place">
+                <maps:Pin.Location>
+                    <sensors:Location>
+                        <x:Arguments>
+                            <x:Double>42.947777</x:Double>
+                            <x:Double>-87.901978</x:Double>
+                        </x:Arguments>
+                    </sensors:Location>
+                </maps:Pin.Location>
+            </maps:Pin>
         </maps:Map.Pins>
 
     </maps:Map>
