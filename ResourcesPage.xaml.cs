@@ -10,15 +10,13 @@ public partial class ResourcesPage : ContentPage
 
             InitializeComponent();
 
-            // Create a list of URLs (or resources)
+            // Create a list of URLs
             List<string> urlList = new List<string>
             {
                 "https://www.AirportExample1.com",
                 "https://www.AirportExample2.com",
-                // Add more URLs or resources here
             };
 
-            // Set the ItemsSource of the CollectionView to the list of URLs
             collectionView.ItemsSource = urlList;
         
     }
