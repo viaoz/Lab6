@@ -21,6 +21,45 @@
                 </x:Arguments>
             </MapSpan>
         </x:Arguments>
-    </maps:Map>
 
+        <maps:Map.Pins>
+            <maps:Pin Label="KATW"
+                      Address="W6390 Challenger Dr, Appleton, WI 54914"
+                      Type="Place">
+                <maps:Pin.Location>
+                    <sensors:Location>
+                        <x:Arguments>
+                            <x:Double>44.258056</x:Double>
+                            <x:Double>-88.519167</x:Double>
+                        </x:Arguments>
+                    </sensors:Location>
+                </maps:Pin.Location>
+            </maps:Pin>
+            <maps:Pin Label="KEAU"
+                      Address="3800 Starr Ave, Eau Claire, WI 54703"
+                      Type="Place">
+                <maps:Pin.Location>
+                    <sensors:Location>
+                        <x:Arguments>
+                            <x:Double>44.865833</x:Double>
+                            <x:Double>-91.484167</x:Double>
+                        </x:Arguments>
+                    </sensors:Location>
+                </maps:Pin.Location>
+            </maps:Pin>
+            <maps:Pin Label="KGRB"
+                      Address="2077 Airport Dr, Green Bay, WI 54313"
+                      Type="Place">
+                <maps:Pin.Location>
+                    <sensors:Location>
+                        <x:Arguments>
+                            <x:Double>44.484722</x:Double>
+                            <x:Double>-88.129722</x:Double>
+                        </x:Arguments>
+                    </sensors:Location>
+                </maps:Pin.Location>
+            </maps:Pin>
+        </maps:Map.Pins>
+
+    </maps:Map>
 </ContentPage>
