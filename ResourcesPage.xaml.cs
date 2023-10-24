@@ -13,8 +13,11 @@ public partial class ResourcesPage : ContentPage
             // Create a list of URLs
             List<string> urlList = new List<string>
             {
-                "https://www.AirportExample1.com",
-                "https://www.AirportExample2.com",
+                "https://wisconsindot.gov/Pages/travel/air/pilot-info/flywi.aspx",
+                "http://wiama.org/",
+                "https://appletonflight.com/",
+                "https://www.brennandairport.com/facilities/"
+
             };
 
             collectionView.ItemsSource = urlList;
