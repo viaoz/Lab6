@@ -9,12 +9,12 @@ public partial class AddNewAirportPopup : Popup
 		InitializeComponent();
 	}
 
-	public void AddAirportButtonClicked(Object sender, EventArgs args)
+	public void AddAirportButtonClicked(System.Object sender, System.EventArgs args)
 	{
 		/* Code here */
 	}
 
-	public void ClosePopupButtonClicked(Object sender, EventArgs args)
+	public void ClosePopupButtonClicked(System.Object sender, System.EventArgs args)
 	{
 		/* Code here */
 	}
