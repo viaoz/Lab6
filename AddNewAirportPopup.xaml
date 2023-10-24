@@ -12,16 +12,16 @@
                     </FlexLayout>
                     <Grid RowDefinitions="*, *, *, *, *, *, *, *">
                         <Label Grid.Row="0" Text="Airport Name" FontSize="Medium" WidthRequest="300"/>
-                        <Entry Grid.Row="1" Text="KATW" Placeholder="Id" x:Name="IdENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
+                        <Entry Grid.Row="1" Text="" Placeholder="Id" x:Name="IdENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
 
                         <Label Grid.Row="2" Text="City" FontSize="Medium" WidthRequest="300"/>
-                        <Entry Grid.Row="3" Text="Appleton" Placeholder="City" x:Name="CityENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
+                        <Entry Grid.Row="3" Text="" Placeholder="City" x:Name="CityENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
 
                         <Label Grid.Row="4" Text="Date Visited" FontSize="Medium" WidthRequest="300"/>
-                        <Entry Grid.Row="5" Text="03/03/2023" Placeholder="Date Visited" x:Name="DateVisitedENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
+                        <Entry Grid.Row="5" Text="" Placeholder="Date Visited" x:Name="DateVisitedENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
 
                         <Label Grid.Row="6" Text="Rating" FontSize="Medium" WidthRequest="300"/>
-                        <Entry Grid.Row="7" Text="3" Placeholder="Rating" x:Name="RatingENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
+                        <Entry Grid.Row="7" Text="" Placeholder="Rating" x:Name="RatingENT" WidthRequest="300" Margin="10, 0, 0, 20"/>
                     </Grid>
                     <!--is this button done?-->
                     <Button Text="Add Airport" Clicked="AddAirportButtonClicked" WidthRequest="200"/>
