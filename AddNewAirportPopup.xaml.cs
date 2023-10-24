@@ -16,6 +16,6 @@ public partial class AddNewAirportPopup : Popup
 
 	public void ClosePopupButtonClicked(System.Object sender, System.EventArgs args)
 	{
-		/* Code here */
+		Close();
 	}
 }
