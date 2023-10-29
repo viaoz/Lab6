@@ -13,6 +13,11 @@
                 <local:MainPage/>
             </x:Arguments>
         </NavigationPage>
+        <NavigationPage IconImageSource="rectangle_list_48.png" Title="Resources">
+            <x:Arguments>
+                <local:ResourcesPage/>
+            </x:Arguments>
+        </NavigationPage>
     </TabbedPage.Children>
 </TabbedPage>
 

@@ -74,6 +74,7 @@ public partial class MainPage : ContentPage
     void CalculateStatistics_Clicked(System.Object sender, System.EventArgs e)
     {
         String result = MauiProgram.BusinessLogic.CalculateStatistics();
+
         DisplayAlert("Your Progress", result.ToString(), "Good to know");
     }
 }
