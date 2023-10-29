@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
         // So any control on the page can bind to the BusinessLogic layer
         // There's really only one control that needs to talk to the BusinessLogic layer, and that's the CollectionView
 
-        // BindingContext = MauiProgram.BusinessLogic;
+        //BindingContext = MauiProgram.BusinessLogic;
     }
 
     // Various event handlers for the buttons on the main page

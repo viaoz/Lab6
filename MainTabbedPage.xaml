@@ -13,9 +13,9 @@
                 <local:MainPage/>
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage IconImageSource="mapicon.png" Title="Map">
+        <NavigationPage IconImageSource="rectangle_list_48.png" Title="Resources">
             <x:Arguments>
-                <local:Map/>
+                <local:ResourcesPage/>
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
