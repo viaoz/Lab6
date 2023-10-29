@@ -57,6 +57,7 @@
 		<PackageReference Include="Npgsql" Version="7.0.6" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -71,7 +72,6 @@
 	  <None Remove="Resources\Images\tornadosolid.svg" />
 	  <None Remove="Resources\Images\trash.png" />
 	  <None Remove="Resources\Images\rectangle-list_48.png" />
-	  <None Remove="Resources\Images\windsolid.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Model\" />
@@ -79,6 +79,7 @@
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\trash.png" />
 	  <BundleResource Include="Resources\Images\rectangle_list_48.png" />
+	  <BundleResource Include="Resources\Images\close.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Compile Update="PlanningTools.xaml.cs">

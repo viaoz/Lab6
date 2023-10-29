@@ -66,4 +66,8 @@ public class Airport : INotifyPropertyChanged
         return Id == otherAirport.Id;
     }
 
+    public override int GetHashCode()
+    {
+        throw new NotImplementedException();
+    }
 }
