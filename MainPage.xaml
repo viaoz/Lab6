@@ -5,7 +5,7 @@
              xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
              x:DataType="model:BusinessLogic" 
              x:Class="Lab6_Starter.MainPage"
-             Title="Routing_Strategies">
+             Title="Airports">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddAirport_Clicked"/>

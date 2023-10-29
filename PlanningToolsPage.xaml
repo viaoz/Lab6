@@ -5,15 +5,24 @@
              x:DataType="model:BusinessLogic" 
              x:Class="Lab6_Starter.PlanningToolsPage"
              Title="Planning tools">
-  <VerticalStackLayout>
-    <!--TODO:   
-        nearby airports button
-        routing strategies button
-        weather (wx) button
-        redemption button-->
-    <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
-    <HorizontalStackLayout>
-      <Button Text="WX" Scale="3"/>
-    </HorizontalStackLayout>
-  </VerticalStackLayout>
-</ContentPage>
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <!--Routing Strategies Button-->
+			      <Button Text="Routing Strategies" Scale="1.1" Margin="30" WidthRequest="140"/>
+            <!--Nearby Airports Button-->
+            <Button Text="Nearby Airports" Scale="1.1" Margin="30" WidthRequest="140"/>
+        </HorizontalStackLayout>
+
+        <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
+        <HorizontalStackLayout>
+            <Button Text="WX" Scale="1.1" Margin="30" WidthRequest="140"/>
+            <Button Text="Rewards" 
+                    Padding="5,2"
+                    Margin="20,0,0,0"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    FontSize="Medium"
+            />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage> 

@@ -13,7 +13,17 @@
                 <local:MainPage/>
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage IconImageSource="rectangle_list_48.png" Title="Resources">
+           <NavigationPage IconImageSource="mapicon.png" Title="Map">
+            <x:Arguments>
+                <local:Map/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage IconImageSource="tools.png" Title="Tools">
+            <x:Arguments>
+                <local:PlanningToolsPage/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage IconImageSource="magnifyingglasssolid.svg" Title="Resources">
             <x:Arguments>
                 <local:ResourcesPage/>
             </x:Arguments>
