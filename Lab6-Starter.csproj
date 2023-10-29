@@ -61,8 +61,17 @@
 
 	<ItemGroup>
 	  <None Remove="Model\" />
+	  <None Remove="Resources\Images\cloudboltsolid.svg" />
+	  <None Remove="Resources\Images\cloudrainsolid.svg" />
+	  <None Remove="Resources\Images\cloudsolid.svg" />
+	  <None Remove="Resources\Images\cloudsunrainsolid.svg" />
+	  <None Remove="Resources\Images\cloudsunsolid.svg" />
+	  <None Remove="Resources\Images\magnifyingglasssolid.svg" />
+	  <None Remove="Resources\Images\sunsolid.svg" />
+	  <None Remove="Resources\Images\tornadosolid.svg" />
 	  <None Remove="Resources\Images\trash.png" />
 	  <None Remove="Resources\Images\rectangle-list_48.png" />
+	  <None Remove="Resources\Images\windsolid.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Model\" />
@@ -75,13 +84,17 @@
 	  <Compile Update="PlanningTools.xaml.cs">
 	    <DependentUpon>PlanningTools.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Weather.xaml.cs">
+	    <DependentUpon>Weather.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Map.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PlanningTools.xaml">
-	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Weather.xaml">
 	  </MauiXaml>
 	</ItemGroup>
 </Project>
