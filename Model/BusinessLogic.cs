@@ -94,15 +94,7 @@ public class BusinessLogic : IBusinessLogic
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="clue"></param>
-    /// <param name="answer"></param>
-    /// <param name="difficulty"></param>
-    /// <param name="date"></param>
-    /// <param name="id"></param>
-    /// <returns></returns>
+
     public AirportEditError EditAirport(String id, String city, DateTime dateVisited, int rating)
     {
 

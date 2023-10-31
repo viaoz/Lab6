@@ -8,21 +8,22 @@
     <VerticalStackLayout>
         <HorizontalStackLayout>
             <!--Routing Strategies Button-->
-			      <Button Text="Routing Strategies" Scale="1.1" Margin="30" WidthRequest="140"/>
+			      <Button Text="Routing Strategies" Scale="1.1" Margin="30" WidthRequest="140" Clicked="OnRoutingButtonClicked"/>
             <!--Nearby Airports Button-->
-            <Button Text="Nearby Airports" Scale="1.1" Margin="30" WidthRequest="140"/>
+            <Button Text="Nearby Airports" Scale="1.1" Margin="30" Clicked="OnNearbyAirportsButtonClicked" WidthRequest="140"/>
         </HorizontalStackLayout>
 
         <!--Lower layer of buttons. T-shirt redemption can go into this horizontal stack -->
         <HorizontalStackLayout>
-            <Button Text="WX" Scale="1.1" Margin="30" WidthRequest="140"/>
+            <Button Text="WX" Scale="1.1" Margin="30" WidthRequest="140" Clicked="OnWeatherButtonClicked"/>
             <Button Text="Rewards" 
                     Padding="5,2"
                     Margin="20,0,0,0"
                     WidthRequest="150"
                     HeightRequest="50"
                     FontSize="Medium"
-            />
+                    Clicked="OnRewardsButtonClicked"/>
+            
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage> 

@@ -11,4 +11,24 @@ public partial class PlanningToolsPage : ContentPage
     {
         InitializeComponent();
     }
+
+    public void OnRoutingButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new RoutingStrategies());
+    }
+
+    public void OnNearbyAirportsButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new NearbyAirports());
+    }
+
+    public void OnWeatherButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Weather());
+    }
+
+    public void OnRewardsButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new());
+    }
 }
