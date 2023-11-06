@@ -8,16 +8,16 @@ namespace Lab6_Starter.Model;
 public class Database : IDatabase
 {
     private static System.Random rng = new();
-    private String connString1;
-    private String connString2;
+    private String connStringVisitedAirports;
+    private String connStringAllAirports;
 
     ObservableCollection<Airport> visitedAirports = new();
     ObservableCollection<Airport> allAirports = new();
 
     public Database()
     {
-        connString1 = GetConnectionString();
-        connString2 = GetConnectionStringAllAirports();
+        connStringVisitedAirports = GetConnectionString();
+        connStringAllAirports = GetConnectionStringAllAirports();
     }
 
     
@@ -28,7 +28,7 @@ public class Database : IDatabase
     public ObservableCollection<Airport> SelectVisitedAirports()
     {
         visitedAirports.Clear();
-        var conn = new NpgsqlConnection(connString1);
+        var conn = new NpgsqlConnection(connStringVisitedAirports);
         conn.Open();
 
         // using() ==> disposable types are properly disposed of, even if there is an exception thrown 
@@ -53,7 +53,7 @@ public class Database : IDatabase
     public Airport SelectAirport(String id)
     {
         Airport airportToAdd = null;
-        var conn = new NpgsqlConnection(connString1);
+        var conn = new NpgsqlConnection(connStringVisitedAirports);
         conn.Open();
 
         using var cmd = new NpgsqlCommand("SELECT id, city, date_visited, rating FROM airports WHERE id = @id", conn);
@@ -78,7 +78,7 @@ public class Database : IDatabase
     {
         try
         {
-            using var conn = new NpgsqlConnection(connString1); // conn, short for connection, is a connection to the database
+            using var conn = new NpgsqlConnection(connStringVisitedAirports); // conn, short for connection, is a connection to the database
 
             conn.Open(); // open the connection ... now we are connected!
             var cmd = new NpgsqlCommand(); // create the sql commaned
@@ -107,7 +107,7 @@ public class Database : IDatabase
     {
         try
         {
-            using var conn = new NpgsqlConnection(connString1); // conn, short for connection, is a connection to the database
+            using var conn = new NpgsqlConnection(connStringVisitedAirports); // conn, short for connection, is a connection to the database
 
             conn.Open(); // open the connection ... now we are connected!
             var cmd = new NpgsqlCommand(); // create the sql commaned
@@ -133,7 +133,7 @@ public class Database : IDatabase
 
     public AirportDeletionError DeleteAirport(Airport airportToDelete)
     {
-        var conn = new NpgsqlConnection(connString1);
+        var conn = new NpgsqlConnection(connStringVisitedAirports);
         conn.Open();
 
         using var cmd = new NpgsqlCommand();
@@ -203,19 +203,19 @@ public class Database : IDatabase
     public ObservableCollection<Airport> SelectAllAirports() //** Don't have info for this database yet**
     {
         allAirports.Clear();
-        var conn = new NpgsqlConnection(connString2);
+        var conn = new NpgsqlConnection(connStringAllAirports);
         conn.Open();
 
         // using() ==> disposable types are properly disposed of, even if there is an exception thrown 
-        using var cmd = new NpgsqlCommand("SELECT id, city, date_visited, rating FROM airports", conn);
+        using var cmd = new NpgsqlCommand("SELECT id, city FROM airports", conn);
         using var reader = cmd.ExecuteReader(); // used for SELECT statement, returns a forward-only traversable object
 
         while (reader.Read()) // each time through we get another row in the table (i.e., another Airport)
         {
             String id = reader.GetString(0);
             String city = reader.GetString(1);
-            DateTime dateVisited = reader.GetDateTime(2);
-            Int32 rating = reader.GetInt32(3);
+            DateTime dateVisited = DateTime.Now;
+            Int32 rating = 5;
             Airport airportToAdd = new(id, city, dateVisited, rating);
             allAirports.Add(airportToAdd);
             Console.WriteLine(airportToAdd);

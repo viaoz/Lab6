@@ -172,7 +172,7 @@ public class BusinessLogic : IBusinessLogic
     /// <returns></returns>
     public ObservableCollection<Airport> GetUnvisitedAirports()
     {
-        return db.SelectAllAirports(); // - GetVisitedAirports()
+        return db.SelectAllAirports(); // Will select airports from AllAirports where that are unique from visited airports
     }
 }
 
