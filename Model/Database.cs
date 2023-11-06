@@ -181,7 +181,7 @@ public class Database : IDatabase
         connStringBuilder.SslMode = SslMode.VerifyFull;
         connStringBuilder.Username = "mprogers"; // won't hardcode this in your app
         connStringBuilder.Password = FetchPassword();
-        connStringBuilder.Database = "defaultdb";
+        connStringBuilder.Database = "defaultdb"; //Will connect to Database for all Wisconsin Airports
         connStringBuilder.ApplicationName = "whatever";
         connStringBuilder.IncludeErrorDetail = true;
 
