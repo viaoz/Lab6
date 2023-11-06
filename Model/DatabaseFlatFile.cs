@@ -61,6 +61,41 @@ public class DatabaseFlatFile : IDatabase
         return airports;
     }
 
+    public ObservableCollection<Airport>? SelectVisitedAirports()
+    {
+        string jsonString;
+
+        String mainDir = FileSystem.Current.AppDataDirectory;
+        airportsFile = String.Format("{0}/{1}", mainDir, filename);
+        if (!File.Exists(airportsFile))
+        {
+            File.CreateText(airportsFile);
+            airports = new ObservableCollection<Airport>();
+            jsonString = JsonSerializer.Serialize(airports, options);
+            File.WriteAllText(airportsFile, jsonString);
+            return airports;
+        }
+
+        jsonString = File.ReadAllText(airportsFile);
+        if (jsonString.Length > 0)
+        {
+            if (airports == null) // just starting the app, so let Deserialize() instantiate the ObservableCollection
+            {
+                airports = JsonSerializer.Deserialize<ObservableCollection<Airport>>(jsonString);
+            }
+            else
+            { // airports already exists, and we have bound to it, so we cannot recreate it
+                airports.Clear();
+                ObservableCollection<Airport> localAirports = JsonSerializer.Deserialize<ObservableCollection<Airport>>(jsonString);
+                foreach (Airport airport in localAirports)
+                {
+                    airports.Add(airport);
+                }
+            }
+        }
+        return airports;
+    }
+
     public Airport? SelectAirport(String id)
     {
         foreach (Airport airport in airports)

@@ -9,5 +9,8 @@ public interface IBusinessLogic
     AirportEditError EditAirport(String id, String city, DateTime dateVisited, int rating);
     Airport FindAirport(String id);
     String CalculateStatistics();
-    ObservableCollection<Airport> GetAirports();
+    ObservableCollection<Airport> GetAllAirports();
+    ObservableCollection<Airport> GetUnvisitedAirports();
+    ObservableCollection<Airport> GetVisitedAirports();
+
 }

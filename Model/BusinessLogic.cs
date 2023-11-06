@@ -18,7 +18,7 @@ public class BusinessLogic : IBusinessLogic
 
     public ObservableCollection<Airport> Airports
     {
-        get { return GetAirports(); }
+        get { return GetVisitedAirports(); }
 
     }
     public BusinessLogic(IDatabase? db)
@@ -148,11 +148,31 @@ public class BusinessLogic : IBusinessLogic
               numAirportsVisited, numAirportsVisited != 1 ? "s" : "", numAirportsUntilNextLevel, nextLevel);
     }
 
-    public ObservableCollection<Airport> GetAirports()
+    /// <summary>
+    /// Gets Observable Collection of all visited Airports
+    /// </summary>
+    /// <returns></returns>
+    public ObservableCollection<Airport> GetVisitedAirports()
+    {
+        return db.SelectVisitedAirports();
+    }
+
+    /// <summary>
+    /// Gets Observable Collection of all Wisconsin Airports
+    /// </summary>
+    /// <returns></returns>
+    public ObservableCollection<Airport> GetAllAirports()
     {
         return db.SelectAllAirports();
     }
 
-
+    /// <summary>
+    /// Gets Observable Collection of all unvisited Airports
+    /// </summary>
+    /// <returns></returns>
+    public ObservableCollection<Airport> GetUnvisitedAirports()
+    {
+        return db.SelectAllAirports(); // - GetVisitedAirports()
+    }
 }
 

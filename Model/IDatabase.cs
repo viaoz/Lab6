@@ -6,9 +6,11 @@ namespace Lab6_Starter.Model
     public interface IDatabase
     {
         ObservableCollection<Airport> SelectAllAirports();
+        ObservableCollection<Airport> SelectVisitedAirports();
         Airport SelectAirport(String id);
         AirportAdditionError InsertAirport(Airport airport);
         AirportDeletionError DeleteAirport(Airport airport);
         AirportEditError UpdateAirport(Airport replacementAirport);
+
     }
 }
