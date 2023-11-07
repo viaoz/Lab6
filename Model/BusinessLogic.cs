@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Lab6_Solution.Model;
 using Lab6_Starter;
 
 namespace Lab6_Starter.Model;
@@ -18,7 +19,7 @@ public class BusinessLogic : IBusinessLogic
 
     public ObservableCollection<Airport> Airports
     {
-        get { return GetVisitedAirports(); }
+        get { return GetAllAirports(); }
 
     }
     public BusinessLogic(IDatabase? db)
@@ -148,19 +149,32 @@ public class BusinessLogic : IBusinessLogic
               numAirportsVisited, numAirportsVisited != 1 ? "s" : "", numAirportsUntilNextLevel, nextLevel);
     }
 
+    public ObservableCollection<AirportPin> AirportPins { get; set; }
+
     /// <summary>
     /// Gets Observable Collection of all visited Airports
     /// </summary>
     /// <returns></returns>
-    public ObservableCollection<Airport> GetVisitedAirports()
+    public void CreateAirportPins()
     {
-        return db.SelectVisitedAirports();
+        //ObservableCollection<Airport> visited = GetVisitedAirports();
+        //ObservableCollection<AirportPin> allWisconsinAirports = GetWisconsinAirports();
+
+        // ToDo: Save data needed for AirportPin class
+        ObservableCollection<AirportPin> mergedPins = new();
+
+        // ToDo: Loop through visited airports
+        // ToDo: For each airport in VISITED, copy matching airport from WisconsinAirports to ParsedAirportPins with VISITED being TRUE
+
+        // Assign merged data to AirportPins
+        this.AirportPins = mergedPins;
+
     }
 
     /// <summary>
     /// Gets Observable Collection of all Wisconsin Airports
     /// </summary>
-    /// <returns></returns>
+    /// <returns>ToDo</returns>
     public ObservableCollection<Airport> GetAllAirports()
     {
         return db.SelectAllAirports();
@@ -170,9 +184,18 @@ public class BusinessLogic : IBusinessLogic
     /// Gets Observable Collection of all unvisited Airports
     /// </summary>
     /// <returns></returns>
-    public ObservableCollection<Airport> GetUnvisitedAirports()
+    public ObservableCollection<Airport> GetWisconsinAirports()
     {
-        return db.SelectAllAirports(); // Will select airports from AllAirports where that are unique from visited airports
+        // ToDo: Gets all wisconsin airports from Wisconsin-Airports.xlms
+        // ToDo: Collects only relevant data (SEE BELOW)
+        // ------ * AirportName = "LOC_ID"
+        // ------ * AirportLocation = Location("LAT", "LONG_")
+        // ------ * Facility Name = "FAC_NM"
+        // ------ * Visited = false // until merged with Visited Airports!
+
+        // ToDo: Returns collection of wisconsin airports as pins
+        return new();
+
     }
 }
 
