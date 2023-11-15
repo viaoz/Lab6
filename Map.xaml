@@ -96,7 +96,7 @@
              x:DataType="lab6_starter:Map"
              x:Class="Lab6_Starter.Map"
              Title="Map">    
-        <maps:Map ItemsSource="{Binding AirportPins}">
+        <maps:Map ItemsSource="{Binding AirportPin}">
         <x:Arguments>
             <MapSpan>
                 <x:Arguments>

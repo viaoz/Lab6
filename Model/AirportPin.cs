@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using Lab6_Starter.Model;
-using static Java.Util.Jar.Attributes;
 
 namespace Lab6_Solution.Model
 {
@@ -12,7 +11,7 @@ namespace Lab6_Solution.Model
         public string FacilityName { get; set; }
         public bool Visited { get; set; }
 
-
+        
         public AirportPin()
 		{
             AirportName = "";
