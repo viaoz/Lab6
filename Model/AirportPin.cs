@@ -1,10 +1,10 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Lab6_Starter.Model;
+using static Java.Util.Jar.Attributes;
 
 namespace Lab6_Solution.Model
 {
-	public class AirportPin : INotifyPropertyChanged
+    public class AirportPin : INotifyPropertyChanged
 	{
         public string AirportName { get; set; }
         public Location AirportLocation { get; set; }

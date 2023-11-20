@@ -22,7 +22,7 @@ public class BusinessLogic : IBusinessLogic
         get { return GetAllAirports(); }
 
     }
-    public BusinessLogic(IDatabase? db)
+    public BusinessLogic(IDatabase db)
     {
         this.db = db;
     }
